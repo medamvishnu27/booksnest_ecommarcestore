@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 import  Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import styles from '../styles/Category.module.css';
+import BASE_URL from "../config";
 
 const Thriller = () => {
   const [thrillerBooks, setThrillerBooks] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/products?category=Thriller')
+    fetch(`${BASE_URL}/products?category=Thriller`)
       .then((response) => response.json())
       .then((data) => setThrillerBooks(data))
       .catch((error) => console.error('Error fetching thriller books:', error));

@@ -6,6 +6,7 @@ import Carousel from './Carousel';
 import Offer from './Offer';
 import FavoriteAuthors from '../pages/FavoriteAuthors';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import BASE_URL from "../config";
 
 const LandingPage = () => {
   const [books, setBooks] = useState([]);
@@ -13,7 +14,7 @@ const LandingPage = () => {
   const [activeTab, setActiveTab] = useState('Featured');
 
   useEffect(() => {
-    fetch('http://localhost:3000/products')
+    fetch(`${BASE_URL}/products`)
       .then((response) => response.json())
       .then((data) => {
         setBooks(data);

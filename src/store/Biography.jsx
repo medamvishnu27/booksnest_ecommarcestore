@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 import styles from '../styles/Category.module.css';
 import  Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import BASE_URL from "../config";
 
 const Biography = () => {
   const [biographyBooks, setBiographyBooks] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/products?category=BioGraphy')
+    fetch(`${BASE_URL}/products?category=BioGraphy`)
       .then((response) => response.json())
       .then((data) => setBiographyBooks(data))
       .catch((error) => console.error('Error fetching biography books:', error));
