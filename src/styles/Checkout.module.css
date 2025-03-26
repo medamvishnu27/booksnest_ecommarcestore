@@ -1,0 +1,104 @@
+/* Center the form in the middle of the screen */
+.pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f7f7f7;
+    padding: 20px ; /* Ensures spacing on smaller screens */
+  }
+  
+  /* Card styling */
+  .card {
+    width: 100%; /* Adapts to smaller screens */
+    max-width: 500px; /* Prevents it from getting too large */
+    padding: 80px;
+    background: #ffffff07;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Payment method button */
+  .codButton {
+    width: 100%;
+    padding: 12px;
+    /* background: black; */
+    text-decoration: none;
+    color:#000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* Form styling */
+  .addressForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input.error {
+    border-color: red;
+  }
+  
+  .errorText {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  /* Submit button */
+  .completeOrderButton {
+    width: 100%;
+    padding: 12px;
+    background: rgb(241, 41, 41);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  .completeOrderButton:hover{
+    background-color: #000;
+  }
+  
+  /* Success Message */
+  .successMessage {
+    margin-top: 15px;
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card {
+      padding: 15px;
+    }
+    .formGroup {
+      flex-direction: column;
+    }
+    input, select {
+      font-size: 14px;
+    }
+  }
+  

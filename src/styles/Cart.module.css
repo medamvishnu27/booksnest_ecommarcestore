@@ -1,0 +1,57 @@
+/* Cart.module.css */
+
+.cartContainer {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.cartImage {
+  width: 180px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.discountBadge {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  padding: 3px 8px;
+  border-radius: 50%;
+}
+
+.originalPrice {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 14px;
+}
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.quantityControls button {
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  text-align: center;
+}
+
+.buyBtn {
+  width: 100%;
+  background-color: red;
+  border: none;
+  padding: 8px 15px;
+  font-weight: bold;
+}

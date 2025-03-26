@@ -1,0 +1,77 @@
+/* Favorite Authors Section */
+.authorsSection {
+    width: 90%;
+    margin: 50px auto;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h2 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  /* View All Button */
+  .viewAll {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+  }
+  
+  .viewAll:hover {
+    background-color: #333;
+  }
+  
+  /* Authors Grid */
+  .authorsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  /* Author Card */
+  .authorCard {
+    text-align: center;
+  }
+  
+  .authorImage {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .authorName {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+  }
+  
+  .booksCount {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .authorsGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .authorsGrid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  

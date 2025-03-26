@@ -1,0 +1,90 @@
+.footer {
+    background-color: #191919;
+    color: white;
+    padding: 40px 0;
+    width: 100%;
+  }
+  
+  .container {
+    max-width: 1200px; /* Keeps content centered */
+    margin: 0 auto;
+    padding: 0 20px; /* Prevents side space issues */
+  }
+  .h5{
+    font-size: 22px;
+    color: gold;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .aboutInfo,
+  .footerLinks,
+  .socialLinks {
+    flex: 1;
+    min-width: 250px;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .aboutInfo p,
+  .footerLinks ul,
+  .socialLinks ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+  }
+  
+  .footerLinks ul li,
+  .socialLinks ul li {
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .footerLinks ul li:hover,
+  .socialLinks ul li:hover {
+    color: #ff4500;
+  }
+  
+  .bottomFooter {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+  }
+  
+  .paymentIcons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .paymentIcons img {
+    height: 30px;
+  }
+  .footer h5 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: bolder;
+    color: #f8c471;
+  }
+  
+  /* Ensure Equal Spacing */
+  @media (min-width: 768px) {
+    .row {
+      display: flex;
+      justify-content: space-around; /* Ensures equal spacing */
+    }
+    .aboutInfo,
+    .footerLinks,
+    .socialLinks {
+      flex: 1;
+      text-align: center;
+    }
+  }
+  
