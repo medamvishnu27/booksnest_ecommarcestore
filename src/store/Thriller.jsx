@@ -4,6 +4,10 @@ import  Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import styles from '../styles/Category.module.css';
 import BASE_URL from "../config";
+import banner from "src/assets/image.png"
+
+
+
 
 const Thriller = () => {
   const [thrillerBooks, setThrillerBooks] = useState([]);
@@ -19,7 +23,7 @@ const Thriller = () => {
     <>
     <Navbar />
     <div>
-        <img src="src/assets/image.png" alt="banner-img" className={styles.bannerimg} />
+        <img src={banner} alt="banner-img" className={styles.bannerimg} />
       </div>
     <div className={styles.categoryContainer}>
       <h1>Thriller Books</h1>

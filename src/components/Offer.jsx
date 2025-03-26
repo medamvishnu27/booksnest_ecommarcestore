@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "../styles/Offer.module.css"; // Importing CSS module
 import { NavLink } from "react-router-dom";
-
+import book1 from "src/assets/offerimg-1.png"
+import book2 from "src\assets\offerimg-2.png"
 const Offer = () => {
   return (
     <div className={styles.offerSection}>
@@ -13,7 +14,7 @@ const Offer = () => {
           <a to="" className={styles.shopNow}>Shop Now</a>
         </div>
         <div className={styles.offerImage}>
-          <img src="/src/assets/offerimg-1.png" alt="Book Offer" />
+          <img src={book1} alt="Book Offer" />
         </div>
       </div>
 
@@ -25,7 +26,7 @@ const Offer = () => {
           <a to="" className={styles.shopNow}>Shop Now</a>
         </div>
         <div className={styles.offerImage}>
-          <img src="/src/assets/offerimg-2.png" alt="Book Offer" />
+          <img src={book2} alt="Book Offer" />
         </div>
       </div>
     </div>
