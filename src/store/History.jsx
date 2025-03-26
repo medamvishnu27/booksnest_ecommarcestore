@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 import styles from '../styles/Category.module.css';
 import  Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import BASE_URL from "../config";
 
 const History = () => {
   const [historyBooks, setHistoryBooks] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/products?category=History')
+    fetch(`${BASE_URL}/products?category=History`)
       .then((response) => response.json())
       .then((data) => setHistoryBooks(data))
       .catch((error) => console.error('Error fetching history books:', error));

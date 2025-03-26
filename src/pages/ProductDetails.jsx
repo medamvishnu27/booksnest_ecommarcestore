@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import styles from '../styles/ProductDetails.module.css';
 import { CartWishlistContext } from '../pages/CartWishlistContext'; // Import the context
+import BASE_URL from "../config";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -12,7 +13,7 @@ const ProductDetails = () => {
   const { addToCart, addToWishlist } = useContext(CartWishlistContext); // Use the context
 
   useEffect(() => {
-    fetch(`http://localhost:3000/products/${id}`)
+    fetch(`${BASE_URL}/products/${id}`)
       .then((response) => response.json())
       .then((data) => setProduct(data))
       .catch((error) => console.error('Error fetching product:', error));

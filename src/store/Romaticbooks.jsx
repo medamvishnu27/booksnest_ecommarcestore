@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import styles from '../styles/Category.module.css';
 import  Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-
+import BASE_URL from "../config";
 const RomanticBooks = () => {
   const [romanticBooks, setRomanticBooks] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/products?category=Romance')
+    fetch(`${BASE_URL}/products?category=Romance`)
       .then((response) => response.json())
       .then((data) => setRomanticBooks(data))
       .catch((error) => console.error('Error fetching romantic books:', error));

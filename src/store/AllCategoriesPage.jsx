@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import styles from "../styles/AllCategories.module.css";
+import BASE_URL from "../config";
 
 const AllCategoriesPage = () => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/products")
+    fetch(`${BASE_URL}/products`)
       .then((response) => response.json())
       .then((data) => {
         const groupedCategories = data.reduce((acc, book) => {
