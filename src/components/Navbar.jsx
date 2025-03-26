@@ -3,6 +3,7 @@ import { CartWishlistContext } from '../pages/CartWishlistContext';
 import { NavLink, Link } from 'react-router-dom';
 import { FaShoppingCart, FaHeart, FaBars } from 'react-icons/fa';
 import styles from '../styles/Navbar.module.css';
+import booklogo from "public\stack-of-books.png"
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -59,7 +60,7 @@ function Navbar() {
   return (
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
       <NavLink className={styles.navBrand} to="/">
-        <img src="/public/stack-of-books.png" alt="" style={{ width: "55px", padding: "5px" }} />
+        <img src={booklogo} alt="" style={{ width: "55px", padding: "5px" }} />
         BookNest.com
       </NavLink>
 

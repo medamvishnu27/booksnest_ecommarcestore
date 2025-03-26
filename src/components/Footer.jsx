@@ -2,6 +2,12 @@ import React from 'react';
 import styles from '../styles/Footer.module.css';
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { Container, Row, Col } from 'react-bootstrap';
+import mastercard from "src/assets/master-card.png";
+import visa from "src/assets/294654_visa_icon.png";
+import paypal from "src/assets/paypal.png";
+import america from "src/assets/american-express.png"
+import bitcoin from "src/assets/2900503_25503.jpg";
+
 
 const Footer = () => {
   return (
@@ -48,11 +54,11 @@ const Footer = () => {
   <Row className={styles.bottomFooter}>
           <Col md={6}> &copy;Copyright BookNest | Built with 💖 by BookNest   </Col>
           <Col md={6} className={styles.paymentIcons}>
-            <img src="src\assets\master-card.png" alt="MasterCard" />
-            <img src="src\assets\paypal.png" alt="PayPal" />
-            <img src="src\assets\american-express.png" alt="American Express" />
-            <img src="src\assets\2900503_25503.jpg" alt="Bitcoin" />
-            <img src="src\assets\294654_visa_icon.png" alt="Visa" />
+            <img src={mastercard} alt="MasterCard" />
+            <img src={paypal} alt="PayPal" />
+            <img src={america} alt="American Express" />
+            <img src={bitcoin} alt="Bitcoin" />
+            <img src={visa} alt="Visa" />
           </Col>
         </Row>
 

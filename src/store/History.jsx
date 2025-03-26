@@ -4,6 +4,7 @@ import styles from '../styles/Category.module.css';
 import  Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import BASE_URL from "../config";
+import banner from "src/assets/image.png"
 
 const History = () => {
   const [historyBooks, setHistoryBooks] = useState([]);
@@ -19,7 +20,7 @@ const History = () => {
     <>
     <Navbar />
     <div>
-        <img src="src/assets/image.png" alt="banner-img" className={styles.bannerimg} />
+        <img src={banner} alt="banner-img" className={styles.bannerimg} />
       </div>
     <div className={styles.categoryContainer}>
       <h1>History Books</h1>

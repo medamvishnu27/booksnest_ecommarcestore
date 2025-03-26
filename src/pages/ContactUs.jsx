@@ -3,13 +3,14 @@ import styles from "../styles/ContactUs.module.css";
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import contactimg from "public\image.png"
 
 const ContactUs = () => {
   return (
     <>
       <Navbar />
       <div>
-        <img src="public\image.png" alt="banner-img" className={styles.bannerimg} />
+        <img src={contactimg} alt="banner-img" className={styles.bannerimg} />
       </div>
 
       <section className={styles.contactSection}>

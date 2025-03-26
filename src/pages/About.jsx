@@ -2,6 +2,11 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Styles from "../styles/SubscribeSection.module.css"
+import About from "src\assets\Aboutbooks.png"
+import Aboutbook from "src\assets\Aboutus-book.png"
+import freeshipping from "src\assets\FreeShiping'.png"
+import cartimg from "src\assets\Cardsimage.png"
+import imgbox from "src\assets\imagebox.png"
 
 
 const ExperienceCard = () => {
@@ -14,7 +19,7 @@ const ExperienceCard = () => {
         {/* Left Image Section */}
         <div className="col-md-6 text-center text-md-start mb-4 mb-md-0">
           <img
-            src="src\assets\Aboutbooks.png"
+            src={About}
             alt="Woman Reading Book"
             className="img-fluid rounded"
           />
@@ -76,7 +81,7 @@ const ExperienceCard = () => {
 
           {/* Right Image */}
           <div className="col-md-6 text-center">
-            <img src="src\assets\Aboutus-book.png" alt="Book" className="img-fluid" />
+            <img src={Aboutbook} alt="Book" className="img-fluid" />
           </div>
         </div>
       </div>
@@ -90,7 +95,7 @@ const ExperienceCard = () => {
         <div className="col-md-4">
           <div className="feature-item">
             <img
-              src="src\assets\FreeShiping'.png" // Replace with the correct path
+              src={freeshipping} // Replace with the correct path
               alt="Shipping Box"
               className="feature-icon"
             />
@@ -103,7 +108,7 @@ const ExperienceCard = () => {
         <div className="col-md-4">
           <div className="feature-item">
             <img
-              src="src\assets\Cardsimage.png" // Replace with the correct path
+              src={cartimg} // Replace with the correct path
               alt="Secure Payment"
               className="feature-icon"
             />
@@ -116,7 +121,7 @@ const ExperienceCard = () => {
         <div className="col-md-4">
           <div className="feature-item">
             <img
-              src="src\assets\imagebox.png" // Replace with the correct path
+              src={imgbox} // Replace with the correct path
               alt="Return Box"
               className="feature-icon"
             />
