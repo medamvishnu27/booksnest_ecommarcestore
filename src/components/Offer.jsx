@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "../styles/Offer.module.css"; // Importing CSS module
 import { NavLink } from "react-router-dom";
-import book1 from "src/assets/offerimg-1.png"
-import book2 from "src\assets\offerimg-2.png"
+import book1 from "../assets/offerimg-1.png"
+import book2 from "../assets/offerimg-2.png"
 const Offer = () => {
   return (
     <div className={styles.offerSection}>

@@ -2,11 +2,11 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Styles from "../styles/SubscribeSection.module.css"
-import About from "src\assets\Aboutbooks.png"
-import Aboutbook from "src\assets\Aboutus-book.png"
-import freeshipping from "src\assets\FreeShiping'.png"
-import cartimg from "src\assets\Cardsimage.png"
-import imgbox from "src\assets\imagebox.png"
+import About from "../assets/Aboutbooks.png"
+import Aboutbook from "../assets/Aboutus-book.png"
+import freeshipping from "../assets/FreeShiping'.png"
+import cartimg from "../assets/Cardsimage.png"
+import imgbox from "../assets/imagebox.png"
 
 
 const ExperienceCard = () => {

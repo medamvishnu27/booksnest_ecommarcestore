@@ -3,7 +3,7 @@ import styles from "../styles/ContactUs.module.css";
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import contactimg from "public\image.png"
+import contactimg from "../../public/image.png"
 
 const ContactUs = () => {
   return (

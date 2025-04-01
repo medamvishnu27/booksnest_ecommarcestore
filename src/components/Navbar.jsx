@@ -3,7 +3,7 @@ import { CartWishlistContext } from '../pages/CartWishlistContext';
 import { NavLink, Link } from 'react-router-dom';
 import { FaShoppingCart, FaHeart, FaBars } from 'react-icons/fa';
 import styles from '../styles/Navbar.module.css';
-import booklogo from "public\stack-of-books.png"
+import booklogo from "../../public/stack-of-books.png"
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
