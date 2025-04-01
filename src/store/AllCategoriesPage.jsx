@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import styles from "../styles/AllCategories.module.css";
 import BASE_URL from "../config";
-import banner from "src/assets/image.png"
+import banner from "../assets/image.png"
 
 const AllCategoriesPage = () => {
   const [categories, setCategories] = useState([]);

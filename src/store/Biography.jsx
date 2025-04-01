@@ -4,7 +4,7 @@ import styles from '../styles/Category.module.css';
 import  Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import BASE_URL from "../config";
-import banner from "src/assets/image.png"
+import banner from "../assets/image.png"
 
 const Biography = () => {
   const [biographyBooks, setBiographyBooks] = useState([]);

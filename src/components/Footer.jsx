@@ -2,11 +2,11 @@ import React from 'react';
 import styles from '../styles/Footer.module.css';
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { Container, Row, Col } from 'react-bootstrap';
-import mastercard from "src/assets/master-card.png";
-import visa from "src/assets/294654_visa_icon.png";
-import paypal from "src/assets/paypal.png";
-import america from "src/assets/american-express.png"
-import bitcoin from "src/assets/2900503_25503.jpg";
+import mastercard from "../assets/master-card.png";
+import visa from "../assets/294654_visa_icon.png";
+import paypal from "../assets/paypal.png";
+import america from "../assets/american-express.png"
+import bitcoin from "../assets/2900503_25503.jpg";
 
 
 const Footer = () => {
